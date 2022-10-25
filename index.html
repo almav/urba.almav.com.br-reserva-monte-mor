@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR" translate="no">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="google" content="notranslate">
+		<link rel="icon" href="https://maps.almav.com/maps/assets/40cf8a48-17b8-4c31-b18c-22fc8c18d7c0/favicon-urba.png" />
+		
+		<meta content="notranslate" name="google"> 
+        <meta content="origin" name="referrer">   
+        <meta content="Reserva Monte Mor" itemprop="name"> 
+        <meta content="Reserva Monte Mor" property="og:title"> 
+        <meta content="Reserva Monte Mor" property="og:site_name"> 
+        <meta content="https://maps.almav.com/maps/assets/40cf8a48-17b8-4c31-b18c-22fc8c18d7c0/thumb01.jpg" itemprop="image"> 
+        <meta content="https://maps.almav.com/maps/assets/40cf8a48-17b8-4c31-b18c-22fc8c18d7c0/thumb01.jpg" property="og:image"> 
+        <meta content="1000" property="og:image:width"> 
+        <meta content="700" property="og:image:height">  
+        <meta content="Reserva Monte Mor" name="Description">  
+        <meta content="Reserva Monte Mor | MAPA INTERATIVO" itemprop="description"> 
+        <meta content="Reserva Monte Mor | MAPA INTERATIVO" property="og:description">  
+        <meta content="summary" name="twitter:card">
+        <meta property="og:locale" content="pt_BR"/>
+        <meta property="og:url" content="https://urba.almav.com.br/reserva-monte-mor/"/>
+        <meta property="og:type" content="website"/>
+		
+        <title>Reserva Monte Mor | Urba</title>
+        <style type="text/css">
+            /* Always set the map height explicitly to define the size of the div
+            * element that contains the map. */
+            #map {
+                overflow: hidden;
+                width: 100%;
+                height: 100%;
+            }
+            /* Optional: Makes the sample page fill the window. */
+            html,
+            body {
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+        </style>
+        <script>
+            let map;
+            function initMap() {
+                map = new almav.maps.Map(document.getElementById("map"), {
+                    "settings-id": 1,
+                });
+            }
+        </script>
+    </head>
+    <body>
+        <div id="map"></div>
+
+        <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+        <script src="https://maps.almav.com/maps/api/js?key=40cf8a48-17b8-4c31-b18c-22fc8c18d7c0&callback=initMap"
+            async></script>
+    </body>
+</html>
